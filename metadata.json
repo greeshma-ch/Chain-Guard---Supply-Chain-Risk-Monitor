@@ -1,0 +1,7 @@
+{
+  "name": "Chain Guard - Supply Chain Risk Monitor",
+  "description": "A professional-grade supply chain monitoring tool that uses AI to detect and mitigate risks for global suppliers using live weather and news feeds.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
