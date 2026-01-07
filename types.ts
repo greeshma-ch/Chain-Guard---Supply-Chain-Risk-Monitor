@@ -7,6 +7,10 @@ export enum RiskLevel {
 
 export type SupplierCategory = 'Electronics' | 'Raw Materials' | 'Logistics' | 'Manufacturing' | 'Textiles' | 'Food & Beverage';
 
+export const ALL_CATEGORIES: SupplierCategory[] = [
+  'Electronics', 'Raw Materials', 'Logistics', 'Manufacturing', 'Textiles', 'Food & Beverage'
+];
+
 export interface CompanyInfo {
   name: string;
   location: string;
@@ -29,6 +33,7 @@ export interface MapInsight {
 export interface RiskAnalysis {
   supplierId: string;
   status: RiskLevel;
+  trend: number[]; // 0-100 values representing risk severity over time
   summary: string;
   weatherDetails: string;
   newsDetails: string;
